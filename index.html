@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Music Player</title>
+        <link rel="stylesheet" href="music.css">
+    </head>
+    <body>
+    
+        <div>
+            <header>
+                <!-- Toggle theme wrapper -->
+                
+                <h1 class="app-title">Songs reminds you of me, In Parallel Universe!!!</h1>
+            </header>
+            <main class="main-wrapper"></main>
+                <!-- Song Card -->
+                <section class="song-card-wrapper">
+                    <div class="card">
+                        <img src="" alt="Avatar" id="image" style="width:100%">
+                        <div class="container">
+                            <h2 id="title"></h2>
+                            <p id="owner"></p>
+                        </div>
+                    </div>
+                    <div class="song-list"></div>
+                    <select id="genres"></select>
+                    <audio id="song-player" controls>
+                        <source id="song-player-source" src="" type="audio/mp3">
+                    </audio>
+                    <div class="change-song">
+                        <div id="previous">
+                            <i class="fa-solid fa-backward-step"></i>
+                        </div>
+                        <div id="next">
+                            <i class="fa-solid fa-forward-step"></i>
+                        </div>
+                        <div class="add-to-playlist">
+                        </div>
+                    </div>
+                </section>
+                <!-- Playlist -->
+                <section class="playlist-wrapper">
+                    <form id="create-playlist"></form>      
+                </section>
+            </main>
+        </div>
+        <script src="https://kit.fontawesome.com/c6ae991696.js" crossorigin="anonymous"></script>
+        <script src="music.js"></script>
+    </body>
+</html>

@@ -1,0 +1,96 @@
+:root {
+    box-sizing: border-box;
+    --dark: #000000;
+    --white: #ffffff;
+    --button-color: #BBAB8C;
+}
+
+body {
+    background-color: var(--white);
+    font-family: monospace;
+    background-image: url('image.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+body.dark {
+    background-color:#222831;
+}
+
+.app-title {
+    text-align: center;
+    margin-top: 0px;
+    color: rgb(241, 255, 47);
+
+}
+.main-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-around;
+}
+
+.song-card-wrapper{
+    margin-top: 2%;
+    margin-left: 40%;
+    margin-right: 13%;
+    align-items: center; 
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 25%;
+    min-height: 425px;
+    height: auto;
+    background-color: #f1f3f4;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    transition: all 0.3s;
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+.container {
+    padding: 2px 16px;
+    align-items: center; 
+}
+
+.title {
+    font-weight: 600;
+    text-align: center;
+}
+
+audio {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.change-song {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#previous{
+    padding: 10px 20px;
+    margin: 5px 0px;
+    background-color: greenyellow;
+    transition: all 0.3s;
+    border-radius: 4px;
+} 
+#next{
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: greenyellow;
+    transition: all 0.3s;
+    border-radius: 4px;
+} 
+
+.change-song div:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+}
